@@ -36,14 +36,14 @@ const team = [
   for (let i = 1; i < team.length; i++) {
     const persona = team[i]
     
-    for (let k in persona) {
+    
       const card = `
       <div class="team-card">
             <div class="card-image">
             <img
             src="img/${persona.image}"
-            alt="Wayne Barnett"
-          />
+            alt="${persona.name}"
+            />
             </div>
             <div class="card-text">
               <h3>${persona.name}</h3>
@@ -52,5 +52,5 @@ const team = [
           </div>
       `
       output.innerHTML += card
-    }
+    
   }
