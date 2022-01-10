@@ -35,7 +35,6 @@ const team = [
   
   for (let i = 1; i < team.length; i++) {
     const persona = team[i]
-    // output.innerHTML += `<br/><h2>${persona.name}</h2>`
     
     for (let k in persona) {
       const card = `
